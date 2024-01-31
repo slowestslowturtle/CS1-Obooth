@@ -10,11 +10,14 @@ using namespace std;
 
 int main()
 {
-    int number1 = 42;
+    // int number1 = 42;
     
-    cout << number1 << endl;
+    // cout << number1 << endl;
 
-    cout << "Hello world" << endl;
+    // cout << "Hello world" << endl;
 
+    int number1;
+    cout << &number1 << endl;
+    
     return 0;
 }
