@@ -10,9 +10,9 @@ using namespace std;
 
 int main()
 {
-    int number1 = 'B';
+    int number3 = 'B';
     
-    cout << number1 << endl;
+    cout << number3 << endl;
 
     cout << "Hello world" << endl;
 
