@@ -17,7 +17,8 @@ int main()
     // cout << "Hello world" << endl;
 
     int number1;
+    long number2;
     cout << &number1 << endl;
-    
+    cout << &number2 << endl;
     return 0;
 }
