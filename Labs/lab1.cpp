@@ -14,27 +14,30 @@
 
 #include <iostream> //library for input and output
 #include <string> //library for string data
- 
 using namespace std; //resolve cout, cin, and endl names
  
 //main entry point of the program
 int main()
 {
-    //FIXME3: declare a variable to store name
+    //FIXME3: declare a variable to store name #fixed
     string yourname;
-    //FIXME4: prompt user to enter their name and store the value in variable
+    //FIXME4: prompt user to enter their name and store the value in variable#fixed
     cout << "what is your name? ";
     getline(cin, yourname);
-    //FIXME5: greet the name using the variable as the following output
-    //must output: Nice meeting you, <name>!
+    //FIXME5: greet the name using the variable as the following output#fixed
+    //must output: Nice meeting you, <name>!#fixed
     cout << "Nice meeting you, " << yourname << endl;
     cout << "Hope you like my Tom & Jerry ASCII art...\n\n";
     string line1;
-    line1 = "  |\\_/|   **********************    (\\_/)\n";
+    line1 = "  |\\_/|   **********************   (\\_/)\n";
     cout << line1;
-    line1 = " / @ @ \\  *       ASCII Lab    *   (='.'=)\n";
+    line1 = " / @ @ \\  *      ASCII Lab     *  (='.'=)\n";
     cout << line1;
-    line1 = "( > 0 < ) *     By Owen Booth  *   (\")_(\")\n";
+    line1 = "( > 0 < ) *    By Owen Booth   * (\" )_( \")\n";
+    cout << line1;
+    line1 = "  >>x<<   *       CSCI 111     *\n";
+    cout << line1;
+    line1 = "  / 0 \\   **********************\n";
     cout << line1;
     //FIXME6: use variable to print the second line line of the graphic
     //FIXME7: print the third line of the graphics
@@ -43,7 +46,7 @@ int main()
     //Note: You can add more lines or print more ASCII arts of your choice if you'd like...
 
     cout << "\nGood bye... hit enter to exit the program: " << '\n';
-    //FIXME10: make the console wait for user input
-
+    //FIXME10: make the console wait for user input;
+    getchar();
     return 0; //exit program by returning 0 status to the system
 }
