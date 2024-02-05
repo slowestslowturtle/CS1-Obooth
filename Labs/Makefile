@@ -10,10 +10,10 @@ CXX = g++
 CXXFLAGS = -c -g -Wall -std=c++17
 
 # the build target executable file; .exe is not required
-PROGRAM = ascii.exe
+PROGRAM = lab1.out
 
 # list all .cpp files separated by space
-CPPFILES = main.cpp
+CPPFILES = lab1.cpp
 
 # make all rule/default rule that'll be run when we run "make"
 # first compile each file to object file
@@ -29,3 +29,5 @@ clean:
 
 # FIXME
 # Add a rule to run the program
+run:
+	./$(Program)
