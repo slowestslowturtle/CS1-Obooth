@@ -33,7 +33,7 @@ int main()
     cout << line1;
     line1 = " / @ @ \\  *      ASCII Lab     *  (='.'=)\n";
     cout << line1;
-    line1 = "( > 0 < ) *    By Owen Booth   * (\" )_( \")\n";
+    line1 = "( > 0 < ) *    By Owen Booth   *  (\")_(\")\n";
     cout << line1;
     line1 = "  >>x<<   *       CSCI 111     *\n";
     cout << line1;
