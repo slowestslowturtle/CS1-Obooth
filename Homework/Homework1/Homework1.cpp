@@ -1,6 +1,7 @@
 /*
     Created By Owen Booth
     2/6/2024
+    Impossible Hangman
 */
 
 #include <iostream>
@@ -16,7 +17,8 @@ int main()
     cout << "after every guess hit enter\n\n";
     cout << "enter your first guess\n";
 
-    getchar();
+    char guess1;
+    cin >> guess1;
     cout << "Stage 0\n";
     cout << "---------------\n";
     cout << "|/\n";
