@@ -15,7 +15,7 @@ int main()
     cout.setf(ios::fixed, ios::floatfield);
     cout << left << setw (10) << "name" << setw(10) << "Title" << setw(10) << "position" << endl;
 
-    cout << setfill('c');
+    cout << setfill('=');
     cout << setw(48) << "" << endl;
     cout << setfill(' ');
 
