@@ -31,7 +31,7 @@ int main()
     cout << "|\n";
     cout << "----------\n";
     cout << "The gallows appear\n\n";
-    
+
     cout << "guess 2\n";
     char guess2;
     cin >> guess2;
