@@ -19,7 +19,7 @@ int main()
 
     char guess1;
     cin >> guess1;
-    cout << "Stage 0\n";
+    cout << "Stage 0 \n";
     cout << "---------------\n";
     cout << "|/\n";
     cout << "|\n";
