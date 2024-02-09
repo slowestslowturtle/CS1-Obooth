@@ -45,7 +45,7 @@ int main()
     //FIXME9: use variable to print the fifth line #fixed
     //Note: You can add more lines or print more ASCII arts of your choice if you'd like...
 
-    cout << "\nGood bye... hit enter to exit the program: " << '\n';
+    cout << "\nGood bye... hit enter to exit the program:" << '\n';
     //FIXME10: make the console wait for user input; #fixed
     getchar();
     return 0; //exit program by returning 0 status to the system
