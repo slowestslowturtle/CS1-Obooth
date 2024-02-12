@@ -25,3 +25,12 @@ Lab #1
     Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Labs/Lab1
     self grade: 100/100
     Notes: Mouse is chunky, but all fixmes are fixed.
+
+Lab #2 
+    Name: Circle Lab
+    Description: Math dealing with a circle and redefining variables.
+    Due Date: 2-20-24
+    Status: Complete
+    Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Labs/L2
+    Self grade: 100/100
+    Notes: Absolute value added so Circumference is positive.
