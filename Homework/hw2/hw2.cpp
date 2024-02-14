@@ -35,7 +35,8 @@ int main()
     svar = side1 + side2 + side3;
     sum1 = (svar/2);
     //inform user of the are and complete Heron's Function
-    cout << "the area of your triangle is " << fixed << setprecision(6) << sqrt(sum1 * (sum1 - side1) * (sum1 - side2) * (sum1 - side3)) << '\n';
+    cout << "the area of your triangle is " << fixed << setprecision(6)
+    << sqrt(sum1 * (sum1 - side1) * (sum1 - side2) * (sum1 - side3)) << '\n';
     //inform of the perimeter
     cout << "The perimeter is " << svar << '\n';
     //Prompt user to exit
