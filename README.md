@@ -42,3 +42,12 @@ Lab #2
     Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Labs/L2
     Self grade: 100/100
     Notes: Absolute value added so Circumference is positive.
+
+Lab #3
+    Name: Point Distance Formula Lab
+    Description: Uses functions to calculate distance between points
+    Due Date: 3-4-24
+    Status: Done
+    Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Labs/L3
+    Self Grade: 100/100
+    Notes: I did the bonus fixme and capital letters won't confuse it.
