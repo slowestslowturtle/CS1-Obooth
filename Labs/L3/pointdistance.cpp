@@ -71,8 +71,7 @@ int main()
         //FIXME6 – Using printf function display the returned distance with proper description #fixed
         double result;
         result = findDistance(x1, y1, x2, y2);
-        cout << "The distance between point 1 and pont 2 is: ";
-        printf("findDistance() = %f", result);
+        printf("The distance between point 1 and pont 2 is: %f", result);
         cout << '\n';
     }
     int answer;
