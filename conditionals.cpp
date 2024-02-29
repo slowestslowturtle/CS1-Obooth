@@ -22,5 +22,16 @@ int main()
         cout << "the statement is false" << endl;
         cout << num1 << "!=" << num2 <<endl;        
     }
-
+    char c2, c3;
+    cout << "enter a letter" << endl;
+    cin >> c2 >> c3;
+    if (c2 == c3)
+    {
+        cout << "yep" << endl;
+    }
+    else
+    {
+        cout << "nope" << endl;
+    }
+    return 0;
 }
