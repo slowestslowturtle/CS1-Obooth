@@ -23,6 +23,17 @@ Homework #2
     Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Homework/hw2
     Self Grade: 100/100
     Notes: It solves a triangle
+
+Homework #3
+    Name: Maths And Functions
+    Description: 2 number values calculater
+    due date: 3-11-24
+    statues: Complet
+    Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Homework/hw3
+    Self Grade 100/100
+    Notes: Bonus fixme completed, and there are alot of test cases.
+
+
 Labs
 
 Lab #1
