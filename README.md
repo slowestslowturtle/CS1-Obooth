@@ -62,3 +62,12 @@ Lab #3
     Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Labs/L3
     Self Grade: 100/100
     Notes: I did the bonus fixme and capital letters won't confuse it.
+
+Lab #4
+    Name: conditionals
+    Description: Uses conditions to select which math function to do
+    Due Date: 3-13-24
+    Status: Done
+    Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Labs/L4
+    Self Grade: 100/100
+    Notes: All done the test functions never actually called but if you do set it up to be called it does work.
