@@ -33,6 +33,13 @@ Homework #3
     Self Grade 100/100
     Notes: Bonus fixme completed, and there are alot of test cases.
 
+Homework #4
+    Name: Consitionals
+    Description: 5 Number values calculator
+    Status: Complete
+    Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Homework/hw4
+    Self Grade: 100/100
+    Notes: I didn't do a massive if else series for largest and smallest.
 
 Labs
 
