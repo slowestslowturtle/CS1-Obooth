@@ -17,6 +17,7 @@ double product(const double &, const double &, const double &, const double &, c
 double larger(const double &, const double &, const double &, const double &, const double &);
 double smaller(const double &, const double &, const double &, const double &, const double &);
 double floor1(const double &, const double &, const double &, const double &, const double &);
+double ave(const double &, const double &, const double &, const double &, const double &);
 void test();
 void menu();
 void clearscreen();
@@ -61,7 +62,7 @@ int main(int argc, char *argv[])
                 {
                     cout << "enter 5 numbers seperated by a space.\n ";
                     cin >> num1 >> num2 >> num3 >> num4 >> num5;
-                    cout << "The largest of these numbers is: " << larger(num1, num2, num3, num4, num5) << '\n';
+                    cout << "The average of these numbers is: " << ave(num1, num2, num3, num4, num5) << '\n';
                     getchar();
                     cin.get();
                     break;
@@ -70,12 +71,21 @@ int main(int argc, char *argv[])
                 {
                     cout << "enter 5 numbers seperated by a space.\n ";
                     cin >> num1 >> num2 >> num3 >> num4 >> num5;
-                    cout << "The smallest of these numbers is: " << smaller(num1, num2, num3, num4, num5) << '\n';
+                    cout << "The largest of these numbers is: " << larger(num1, num2, num3, num4, num5) << '\n';
                     getchar();
                     cin.get();
                     break;
                 }
                 case 5:
+                {
+                    cout << "enter 5 numbers seperated by a space.\n ";
+                    cin >> num1 >> num2 >> num3 >> num4 >> num5;
+                    cout << "The smallest of these numbers is: " << smaller(num1, num2, num3, num4, num5) << '\n';
+                    getchar();
+                    cin.get();
+                    break;
+                }
+                case 6:
                 {
                     cout << "enter 5 numbers seperated by a space.\n ";
                     cin >> num1 >> num2 >> num3 >> num4 >> num5;
@@ -95,7 +105,7 @@ int main(int argc, char *argv[])
                     cin.get();
                     break;
                 }
-                case 6:
+                case 7:
                 {
                     cout << "quit\n";
                     i++;
@@ -125,16 +135,19 @@ void test()
     assert(floor1(3, 2.5, 3, 4, 5) == 0);
     assert(floor1(0, .5, .3, .1, .01) == 2);
     cout << "All tests passed" << endl;
+    assert(ave(1, 2, 3, 4, 5) == 3);
+    assert(ave(2, 2, 2, 2, 2) == 2);
 }
 
 void menu()
 {
     cout << "[1]sum 5 nums\n";
     cout << "[2]product 5 nums\n";
-    cout << "[3]largest of 5 nums\n";
-    cout << "[4]smallest of 5 nums\n";
-    cout << "[5]even, odd, or 0 floor \n";
-    cout << "[6]exit program\n";
+    cout << "[3]average 5 nums\n";
+    cout << "[4]largest of 5 nums\n";
+    cout << "[5]smallest of 5 nums\n";
+    cout << "[6]even, odd, or 0 floor \n";
+    cout << "[7]exit program\n";
 }
 
 void clearscreen()
@@ -179,4 +192,11 @@ double floor1(const double &num1, const double &num2, const double &num3, const 
         return 0;
     }
     return 3;
+}
+
+double ave(const double &num1, const double &num2, const double &num3, const double &num4, const double &num5)
+{
+    double ave1;
+    ave1 = (sum(num1, num2, num3, num4, num5)/5);
+    return (ave1);
 }
