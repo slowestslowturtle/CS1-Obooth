@@ -41,6 +41,15 @@ Homework #4
     Self Grade: 100/100
     Notes: I didn't do a massive if else series for largest and smallest.
 
+Homework #5
+    Name: Guess the Number
+    Description: guess the number game
+    Status: Complete
+    Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Homework/hw5
+    Self Grade: 100/100
+    Notes: It waits for the user to exit. didn't do the bonus
+
+
 Labs
 
 Lab #1
