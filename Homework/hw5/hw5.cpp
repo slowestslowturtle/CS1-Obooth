@@ -49,37 +49,51 @@ void test();
 int main()
 {
     double guess = 0;
-    double rnum = randomNumber();
     string myname;
     test();
     cout << "what is your name ";
     getline(cin, myname);
     cout << "welcome " << myname << " to guess the number you get 6 attempts. \n";
-    for (int w = 0; w < 6;)
+    for (int x = 0; x < 1;)
     {
-        guess = readnumber(guess);
-        if (checknumber(guess, rnum) == 0)
+        double rnum = randomNumber();
+        for (int w = 0; w < 6;)
         {
-            cout << "you win. Hit enter to exit\n";
-            getchar();
+            guess = readnumber(guess);
+            if (checknumber(guess, rnum) == 0)
+            {
+                cout << "you win. it took " <<w +1 << " guesses.\n";
+                break;
+            }
+            if (checknumber(guess, rnum) == 2)
+            {
+                cout << "Too High\n";
+                w++;
+            }
+            if (checknumber(guess, rnum) == -1)
+            {
+                cout << "Too low\n";
+                w++;
+            }
+        }
+        cout << "The number was: " << rnum << " would you like to play again( 1 = yes, 2 = no )\n";
+        int answer2;
+        cin.get();
+        cin >> answer2;
+        if (answer2 == 0)
+        {
+            x++;
+        }
+        else
+        {
+            cout << "hit enter to run again.\n";
             cin.get();
-            return 0;
-        }
-        if (checknumber(guess, rnum) == 2)
-        {
-            cout << "Too High\n";
-            w++;
-        }
-        if (checknumber(guess, rnum) == -1)
-        {
-            cout << "Too low\n";
-            w++;
+            getchar();
         }
     }
-    cout << "The number was: " << rnum << " hit enter to exit.\n";
+    cout << "goodbye.\n";
     getchar();
     cin.get();
-
     return 0;
 }
 
