@@ -78,3 +78,12 @@ Lab #4
     Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Labs/L4
     Self Grade: 100/100
     Notes: All done the test functions never actually called but if you do set it up to be called it does work.
+
+Lab #5
+    Name: Loops
+    Description: Uses Loops to print asterisk shapes
+    Due Date: 3-27-24
+    Status: Done
+    Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Labs/L5
+    Self Grade: 100/100
+    Notes: Done was pretty straight foward.
