@@ -96,3 +96,12 @@ Lab #5
     Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Labs/L5
     Self Grade: 100/100
     Notes: Done was pretty straight foward.
+
+Lab #6
+    Name: Pointers
+    Description: uses pointers and dynamically redefined variables
+    due date; 3-28
+    status: done
+    Location:
+    Self Grade: 100/100
+    Notes: I did it on the airplane.
