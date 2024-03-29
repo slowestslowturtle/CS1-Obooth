@@ -102,6 +102,6 @@ Lab #6
     Description: uses pointers and dynamically redefined variables
     due date; 3-28
     status: done
-    Location:
+    Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Labs/L6
     Self Grade: 100/100
     Notes: I did it on the airplane.
