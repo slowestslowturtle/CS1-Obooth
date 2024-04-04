@@ -1,8 +1,8 @@
 /*
 Kattis - Hissing Microphone Problem
 
-By: Owen Booth FIXME1
-Date: 4/3/2024 FIXME2
+By: Owen Booth FIXME1 #fixed
+Date: 4/3/2024 FIXME2 #fixed
 
 Hissing Microphone Problem Statement: https://open.kattis.com/problems/hissingmicrophone
 Algorithm steps:
@@ -18,38 +18,73 @@ Algorithm steps:
 
 using namespace std;
 
+#define clear() system("clear")
+
 // function prototypes
 string answer(const string &line);
 void testAnswer();
 void solve();
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[])
+{
     if (argc == 2 and string(argv[1]) == "test")
         testAnswer();
     else
         solve();
+    return 0;
 }
 
-string answer(const string &line) {
-    // FIXME3
+string answer(const string &line)
+{
+    // FIXME3 #fixed
     // implment algorithm step 2
     // return "hiss" if ss is found in line
     // otherwise, return "no hiss"
-    return "hiss";
+    for (size_t x = 1; x < line.length(); x++)
+    {
+        if (line.at(x - 1) == line.at(x) && line.at(x) == 's')
+        {
+            return "hiss";
+        }
+    }
+
+    return "no hiss";
 }
 
-// unit testing answer()
-void testAnswer() {
-    // FIXME4
+//unit testing answer()
+void testAnswer()
+{
+    string line2,line3;
+    line2 = "chess";
+    line3 = "colors";
+    // FIXME4 #fixed
+    assert(answer(line2) == "hiss");
+    assert(answer(line3) == "no hiss");
     // write at least two test cases to test answer()
     cerr << "All test cases passed!\n";
 }
 
 // solving the problem for kattis
-void solve() {
+void solve()
+{
+    clear();
     string line;
     // string consists of only lowercase letters (no spaces) upto 30 chars
-    // FIXME5
+    // FIXME5 # fixed
     // read string into line
+    cout << "Enter a word between than 30 charachters.\n";
+    for (int i = 0; i < 1;)
+    {
+        cin >> line;
+        if (line.length() > 30)
+        {
+            cout << "Enter a word between 1 and 30 charachters.\n";
+        }
+        else
+        {
+            i++;
+        }
+    }
     cout << answer(line) << endl;
+
 }
