@@ -49,7 +49,13 @@ Homework #5
     Self Grade: 100/100
     Notes: It waits for the user to exit. didn't do the bonus
 
-
+Homework #6
+    Name: Kattis Apaxiaaans
+    Description: Apaxiaaans problem
+    status: complete
+    Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Homework/hw6
+    Self Grade: 100/100
+    Notes: Passed the Kattis test
 Labs
 
 Lab #1
@@ -105,3 +111,21 @@ Lab #6
     Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Labs/L6
     Self Grade: 100/100
     Notes: I did it on the airplane.
+
+Lab #7
+    Name: Hissing Microphone
+    Description: Tells you if a word will hiss bad
+    due date: 4-4
+    Status: Done
+    Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Labs/L7
+    Self grade: 100/100
+    Notes: Passed the Kattis Problem.
+
+Lab #8
+    Name: Arrays
+    Description: Finds basic stats and sorts a variable amount of numbers
+    due date: 4- 12
+    Status: done
+    Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Labs/L8
+    Self Grade: 100/100
+    Notes: Used the swap function so I deleted temp.
