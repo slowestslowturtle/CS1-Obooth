@@ -113,7 +113,7 @@ void findMaxAndMin(int nums[], int len, int &max, int &min)
 // Implements bubble sort
 void bubbleSort(int nums[], int len)
 {
-    int i, j, temp;
+    int i, j;
     bool sorted = false;
     for (i = 0; i < len; i++)
     {
