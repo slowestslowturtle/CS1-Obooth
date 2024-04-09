@@ -80,7 +80,7 @@ int main()
         int answer2;
         cin.get();
         cin >> answer2;
-        if (answer2 == 0)
+        if (answer2 == 2)
         {
             x++;
         }
