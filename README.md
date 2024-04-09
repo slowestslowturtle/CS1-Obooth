@@ -56,6 +56,15 @@ Homework #6
     Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Homework/hw6
     Self Grade: 100/100
     Notes: Passed the Kattis test
+
+Homework #7
+    Name: Kattis Falling Apart
+    Description: Falling apart problem
+    Status: complete
+    location : https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Homework/hw7
+    Self grade 100/100
+    Notes: Passed the Kattis test.
+
 Labs
 
 Lab #1
