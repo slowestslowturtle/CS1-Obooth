@@ -1,7 +1,7 @@
 /*
-FIXME1: Include program and programmer information, date, etc.
+FIXME1: Include program and programmer information, date, etc. #fixed
 Updated by: Owen Booth
-Date:
+Date: 4-11-24
 The lab demostrates the use of array and some operations on array.
 */
 
@@ -137,7 +137,7 @@ void bubbleSort(int nums[], int len)
 big_int findSum(int nums[], int len)
 {
     big_int sum = 0;
-    // FIXME6: iterate through nums array and add each element to sum
+    // FIXME6: iterate through nums array and add each element to sum #fixed
     for (int i = 0; i < len; i++)
     {
         sum += nums[i];
