@@ -1,6 +1,10 @@
 #include <iostream>
+#include <cstdlib>
+#include <string>
+#include <time.h>
+#include <cassert>
 double guesscheck(double, double);
-
+void alotofrandom();
 using namespace std;
 
 int main()
@@ -23,13 +27,14 @@ int main()
         }
         if (guesscheck(num1, num2) == 2)
         {
-            cout << num2 <<'\n';
+            cout << num2 << '\n';
+            break;
         }
-        i++;
-        if (i==6)
+        if (i == 5)
         {
             break;
         }
+        i++;
     }
     cout << "Goodbye" << endl;
     return 0;
