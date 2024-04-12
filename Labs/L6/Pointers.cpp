@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
     OPERATION oper;
     char oper1;
     oper1 = 'n';
-    // FIXME4: Add do... while loop to continue the program until the user wants to quit #fixed
+    // FIXME4: add while loop to continue the program until the user wants to quit #fixed
     // FIXME5: call clear function defined above to clear the screen # fixed
     while (oper1 == 'n')
     {
