@@ -46,12 +46,12 @@ void solve()
 string answer(string &compact, const string &name)
 {
     // get rid of all the repeated letters leaving one.
-    compact = string(1, name[0]);
+    compact = name[0];
     for (size_t i = 1; i < name.size(); i++)
     {
         if (name[i] != name[i - 1])
         {
-            compact += string(1, name[i]);
+            compact += name[i];
         }
     }
     return compact;
