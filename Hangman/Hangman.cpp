@@ -51,6 +51,7 @@ int main()
         vector<string> v1(1);
         v1.at(0) = answer;
         // have them try to guess
+        cout << "there are " << word.length() << " letters.\n";
         while (vic == 0)
         {
             g++;
@@ -97,7 +98,7 @@ int main()
         }
         if (v == 7)
         {
-            cout << "you lose the asnwer was: " << word << '\n';
+            cout << "you lose the answer was: " << word << '\n';
         }
         else
         {
@@ -105,7 +106,7 @@ int main()
         }
         int b = 0;
         // aks them if they want to play again
-        cout << "Would you like to play again(1=yes, 0=no) ";
+        cout << "Would you like to play again (1=yes, 0=no) ";
         getchar();
         cin >> b;
         if (b == 0)
@@ -114,7 +115,7 @@ int main()
         }
         else
         {
-            cout << "hit enter tp run again";
+            cout << "hit enter to run again";
             getchar();
             cin.get();
         }
@@ -278,7 +279,7 @@ void clearanswer(string &answer)
 {
     for (size_t x = 0; x < answer.length(); x++)
     {
-        answer.at(x) += '_';
+        answer.at(x) = '_';
     }
 }
 // gets a random word
