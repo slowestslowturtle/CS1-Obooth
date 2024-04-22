@@ -58,7 +58,7 @@ int main()
             v1.resize(1 + g);
             for (int z = 0; z < 1;)
             {
-                cout << "enter a guess: " << '\n';
+                cout << "type a guess then hit enter: " << '\n';
                 cin >> guess;
                 // See if they already entered the letter.
                 if (repeat(guess, g, v2) == 1)
