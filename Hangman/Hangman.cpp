@@ -23,91 +23,17 @@ double repeat(char &, int &, string &);
 void displayelim(char &, int &, string &);
 void clearanswer(string &);
 void getword(string &);
-
+double game();
 int main()
 {
-    // Create Variables
-    string word;
-    string answer;
-    char guess;
-    int vic;
-    int v;
-    int g;
-    string v2;
-    string v3;
     // Set the loop to play again.
     for (int w = 0; w < 1;)
     {
-        clear();
-        // create the word they're trying to guess
-        getword(word);
-        // set answer to the proper size
-        answer.resize(word.length());
-        vic = 0;
-        v = 0;
-        g = 0;
-        // set answer to underscores
-        clearanswer(answer);
-        vector<string> v1(1);
-        v1.at(0) = answer;
-        // have them try to guess
-        cout << "there are " << word.length() << " letters.\n";
-        while (vic == 0)
-        {
-            g++;
-            v1.resize(1 + g);
-            for (int z = 0; z < 1;)
-            {
-                cout << "type a guess then hit enter: " << '\n';
-                cin >> guess;
-                // See if they already entered the letter.
-                if (repeat(guess, g, v2) == 1)
-                {
-                    cout << "you already entered that letter. \n";
-                }
-                if (repeat(guess, g, v2) == 0)
-                {
-                    z++;
-                }
-            }
-            fillanswer(word, answer, guess);
-            v1.at(g) = answer;
-            // if the letter they entered went into the word check if they won
-            if (v1.at(g) != v1.at(g - 1))
-            {
-                if (guesscheck(word, answer) == 1)
-                {
-                    vic = 1;
-                }
-            }
-            // if the letter they entered wasn't in the word progress the stage,
-            // and amount of tries attempted and show what letters eliminated.
-            else
-            {
-                cout << "there is no " << guess << "\n";
-                v++;
-                displaynoose(v);
-                displayelim(guess, v, v3);
-                if (v == 7)
-                {
-                    break;
-                }
-            }
-            cout << "progress: \n";
-            cout << answer << "\n\n";
-        }
-        if (v == 7)
-        {
-            cout << "you lose the answer was: " << word << '\n';
-        }
-        else
-        {
-            cout << "congratulations you win.\n";
-        }
-        int b = 0;
+        game();
         // aks them if they want to play again
         cout << "Would you like to play again (1=yes, 0=no) ";
         getchar();
+        int b = 0;
         cin >> b;
         if (b == 0)
         {
@@ -123,6 +49,85 @@ int main()
     cout << "hit enter to quit";
     getchar();
     cin.get();
+    return 0;
+}
+double game()
+{
+    // Create Variables
+    string word;
+    string answer;
+    char guess;
+    int vic;
+    int v;
+    int g;
+    string v2;
+    string v3;
+    clear();
+    // create the word they're trying to guess
+    getword(word);
+    // set answer to the proper size
+    answer.resize(word.length());
+    vic = 0;
+    v = 0;
+    g = 0;
+    // set answer to underscores
+    clearanswer(answer);
+    vector<string> v1(1);
+    v1.at(0) = answer;
+    // have them try to guess
+    cout << "there are " << word.length() << " letters.\n";
+    while (vic == 0)
+    {
+        g++;
+        v1.resize(1 + g);
+        for (int z = 0; z < 1;)
+        {
+            cout << "type a guess then hit enter: " << '\n';
+            cin >> guess;
+            // See if they already entered the letter.
+            if (repeat(guess, g, v2) == 1)
+            {
+                cout << "you already entered that letter. \n";
+            }
+            if (repeat(guess, g, v2) == 0)
+            {
+                z++;
+            }
+        }
+        fillanswer(word, answer, guess);
+        v1.at(g) = answer;
+        // if the letter they entered went into the word check if they won
+        if (v1.at(g) != v1.at(g - 1))
+        {
+            if (guesscheck(word, answer) == 1)
+            {
+                vic = 1;
+            }
+        }
+        // if the letter they entered wasn't in the word progress the stage,
+        // and amount of tries attempted and show what letters eliminated.
+        else
+        {
+            cout << "there is no " << guess << "\n";
+            v++;
+            displaynoose(v);
+            displayelim(guess, v, v3);
+            if (v == 7)
+            {
+                break;
+            }
+        }
+        cout << "progress: \n";
+        cout << answer << "\n\n";
+    }
+    if (v == 7)
+    {
+        cout << "you lose the answer was: " << word << '\n';
+    }
+    else
+    {
+        cout << "congratulations you win.\n";
+    }
     return 0;
 }
 // checks if they already entered that letter
