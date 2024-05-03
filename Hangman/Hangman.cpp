@@ -292,7 +292,7 @@ void getword(string &word)
 {
     ifstream fin;
     srand(time(0));
-    int randomLine = std::rand() % 855 + 1;
+    int randomLine = rand() % 855 + 1;
     fin.open("library.txt", ifstream::in);
     string line;
     int currentline = 1;
