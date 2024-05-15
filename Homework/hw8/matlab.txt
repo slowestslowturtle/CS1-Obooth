@@ -17,3 +17,6 @@ fprintf(' Too many tries better luck next time \n');
 else 
 fprintf ('congatulations you guessed the number\n');
 end
+
+
+(assisted from many an online video)
