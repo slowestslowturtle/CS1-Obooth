@@ -65,6 +65,13 @@ Homework #7
     Self grade 100/100
     Notes: Passed the Kattis test.
 
+Homework #7
+    Name: Matlab Guess number
+    Description: Matlab Guess number
+    Status: complete
+    location : https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Homework/hw8
+    Self grade 95/100
+    Notes: Not perfect fail conditions.
 Labs
 
 Lab #1
@@ -138,3 +145,13 @@ Lab #8
     Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Labs/L8
     Self Grade: 100/100
     Notes: Used the swap function so I deleted temp.
+
+Final
+
+Hangman
+    Name: Hangman
+    Description: uses strings vectors and a seperate txt file to run hangman
+    Status: Done
+    Location: https://github.com/slowestslowturtle/CS1-Obooth/tree/main/Hangman
+    Self Grade: 100/100
+    Notes: I really do like the way it's coded and the way the conditionals run.
