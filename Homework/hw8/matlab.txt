@@ -1,0 +1,19 @@
+>> count = 0;
+realnumber=ceil(rand(1)*20);
+fprintf('Guess a number between 1 and 20. \n');
+guess=input('Guess a number. \n');
+while guess ~= realnumber
+count = count +1;
+if guess>realnumber
+fprintf('your number was to high \n');
+guess=input('Guess another number. \n');
+else
+fprintf('your guess is to low. \n');
+guess = input('guess another number\n');
+end
+end
+if count > 7 
+fprintf(' Too many tries better luck next time \n');
+else 
+fprintf ('congatulations you guessed the number\n');
+end
